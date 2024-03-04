@@ -1,0 +1,15 @@
+Create a variable called "number" and assign any integer value to it.
+Use an if-else statement to check if the number is even or odd. You can use the modulo operator (%), which returns the remainder of a division operation, to check if the number is divisible by 2. If the remainder is 0, the number is even, otherwise it is odd.
+You can also use logical operator "and" to check if the number is divisible by 2 and greater than 10.
+You can use logical operator "or" to check if the number is either divisible by 2 or greater than 10.
+
+# Assign any integer value to the variable "number"
+number = 15
+
+# Check if the number is even or odd
+if number % 2 == 0:
+    print(f"{number} is even.")
+elif number > 10:
+    print(f"{number} is odd and greater than 10.")
+else:
+    print(f"{number} is odd and not greater than 10.")
