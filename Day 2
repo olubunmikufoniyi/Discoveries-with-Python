@@ -1,0 +1,27 @@
+Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
+It will take your current age as the input and output a message with our time left in this format:
+
+You have x days, y weeks, and z months left.
+Where x, y and z are replaced with the actual calculated numbers.
+Example Input :
+56
+Example Output:
+You have 12410 days, 1768 weeks, and 408 months left.
+# Get the current age from the user
+current_age = int(input("Enter your current age: "))
+
+# Constants
+average_life_expectancy = 90
+days_in_year = 365
+weeks_in_year = 52
+months_in_year = 12
+
+# Calculate remaining time until 90 years old
+remaining_years = average_life_expectancy - current_age
+remaining_days = remaining_years * days_in_year
+remaining_weeks = remaining_years * weeks_in_year
+remaining_months = remaining_years * months_in_year
+
+# Display the results
+print(f"You have approximately:")
+print(f"You have {remaining_days} days, {remaining_weeks} weeks, and {remaining_months} months left.")
